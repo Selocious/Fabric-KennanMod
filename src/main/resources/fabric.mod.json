@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "thekennanmod",
+	"version": "${version}",
+	"name": "The Kennan Mod",
+	"description": "All Things Kennan!",
+	"authors": [
+		"Jobsen05 and Selocious"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/thekennanmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.selocious.thekennanmod.TheKennanMod"
+		],
+		"fabric-datagen": [
+			"net.selocious.thekennanmod.TheKennanModDataGenerator"
+		],
+		"client": [
+			"net.selocious.thekennanmod.TheKennanModClient"
+		]
+	},
+	"mixins": [
+		"thekennanmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
