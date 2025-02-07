@@ -1,6 +1,14 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "thekennanmod:custom/deep_fryer_block",
   "textures": {
-    "all": "thekennanmod:block/deep_fryer_sides"
-  }
+    "all": "thekennanmod:block/deep_fryer_sides",
+    "particle": "thekennanmod:block/deep_fryer_sides",
+    "0": "thekennanmod:block/deep_fryer_bottom",
+    "1": "thekennanmod:block/deep_fryer_sides",
+    "2": "thekennanmod:block/deep_fryer_top",
+    "3": "thekennanmod:block/dfnn",
+    "4": "thekennanmod:block/net",
+    "missing": "thekennanmod:block/"
+  },
+  "render_type": "cutout"
 }

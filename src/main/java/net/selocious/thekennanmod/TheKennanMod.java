@@ -2,6 +2,7 @@ package net.selocious.thekennanmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.selocious.thekennanmod.block.ModBlocks;
 import net.selocious.thekennanmod.item.ModItems;
 import org.slf4j.Logger;
@@ -15,5 +16,9 @@ public class TheKennanMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		//FuelRegistryEvents.BUILD.register((builder, context) -> {
+		//	builder.add(ModItems.BATTERY, 600);
+		//});
 	}
 }
