@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "thekennanmod:block/deep_fryer_block"
-    }
+    "facing=north": { "model": "thekennanmod:block/deep_fryer_block", "uvlock": true },
+    "facing=east":  { "model": "thekennanmod:block/deep_fryer_block", "y":  90, "uvlock": false },
+    "facing=south": { "model": "thekennanmod:block/deep_fryer_block", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "thekennanmod:block/deep_fryer_block", "y": 270, "uvlock": false }
   }
 }
